@@ -1,5 +1,5 @@
 <?php
-sd
+
 $intcode = explode( ',', file_get_contents('5.txt') );
 $input = 5;
 
@@ -89,4 +89,6 @@ while ( $opcode != 99 ) {
 				break 2;
 		}
 }
+
+echo "EOF";
 

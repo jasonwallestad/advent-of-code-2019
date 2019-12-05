@@ -89,3 +89,4 @@ while ( $opcode != 99 ) {
 				break 2;
 		}
 }
+echo "EOF";

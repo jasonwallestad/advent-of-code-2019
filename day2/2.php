@@ -1,10 +1,5 @@
 <?php
 
-// from Part 1	
-// $intcode = explode(',', file_get_contents('2.txt'));
-// $intcode[1] = 12;
-// $intcode[2] = 2; 
-
 for ( $noun = 0; $noun < 100; $noun++ ) {
 	
 	for ( $verb = 0; $verb < 100; $verb++ ) {
@@ -27,13 +22,10 @@ for ( $noun = 0; $noun < 100; $noun++ ) {
 		}
 		
 		if ( $intcode[0] == 19690720 ) { 
-			echo "Noun: $noun; Verb: $verb; Answer: " . (100 * $noun + $verb);
+			echo "Noun: $noun; Verb: $verb; Star 2 Answer: " . (100 * $noun + $verb);
 			die();
 		}
 
 	}
 
 }
-
-// echo "Part 1 Answer: " . $intcode[0];
-

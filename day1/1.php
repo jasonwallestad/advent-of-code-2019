@@ -7,7 +7,7 @@ foreach ($raw_data as $module) {
 	$f = 0;
 	while ($module > 0) {
 		$module = floor($module/3) - 2;
-		if ($module > 0) { $f += $module; }
+		if ($module > 0) $f += $module;
 	}
 	$fuel_array[] = $f;
 }

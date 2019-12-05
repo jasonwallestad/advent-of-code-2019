@@ -58,4 +58,3 @@ foreach ($grid as $c => $cv) {
 
 echo "Shortest Distance: $d_answer<br />";
 echo "Shortest Time: $t_answer";
-

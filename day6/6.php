@@ -5,12 +5,12 @@ $map = array(); $planet_values = array();
 
 foreach ( $instructions as $instruction ) {
 	$rules = explode(")", $instruction);
-	list($o1,$o2) = $rules;
-	$map[$o2] = $o1;
+	list($sun,$planet) = $rules;
+	$map[$planet] = $sun;
 }
 
-foreach ( $map as $orb => $sun ) {
-	$planet_values[] = count( find_com( $orb, $map ) );
+foreach ( $map as $planet => $sun ) {
+	$planet_values[] = count( find_com( $planet, $map ) );
 }
 	
 echo "Star 1 Answer: " . array_sum( $planet_values ) . '<br />';
